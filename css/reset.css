@@ -1,0 +1,90 @@
+ /*reset css*/
+ @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+   font-family: 'GmarketSansBold';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Pretendard-Medium';
+   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+}
+
+
+@font-face {
+   src: url('https://assets.codepen.io/2479807/MUSETTA-Regular.otf');
+   font-family: 'Musetta';
+}
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i");
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400');
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ /*글씨체 설정 및 태그가 가지고 있는 기본 css 속성들을 초기화 합니다*/
+ * { margin:0; padding:0; box-sizing: border-box;}
+ ul,ol,li { list-style:none;}
+ a { text-decoration:none;}
+ img,video { vertical-align:top;}
+ table { border-collapse:collapse;}
+ body { 
+  font-family: 'LeferiPoint-BlackA';
+    line-height:1; font-size:14px; overflow: hidden; text-overflow: ellipsis;}
+ .clear_fix:after { content:""; display:block; clear:both;}
+
+
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+* {
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+html, body { 
+  overflow-x: hidden;
+}    
+body, p, input {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+/* HTML5 display-role reset for older browsers */
+header, footer, section { 
+  display: block; 
+}
+a {
+  text-decoration: none;
+}
+::selection {
+  background: #333; 
+  color: rgb(0, 205, 245);
+}
+button {
+  border: none;
+  font-size: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}

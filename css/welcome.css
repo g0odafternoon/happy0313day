@@ -1,0 +1,114 @@
+
+#title-box {
+  text-align: center;
+  animation: fade-in 0.5s ease-out 0.3s both, 
+          going-down 0.5s ease-out 0.3s both;
+}
+#title-box > div {
+  margin: 10px 0 auto;
+}
+#title-box > div:first-child {
+  margin-top: 0px;
+}
+#title-box > div:last-child {
+  margin-bottom: 20px;
+}
+.title, h1 {
+  line-height: 3rem;
+  font-size: 2rem;
+  letter-spacing: -0.2rem;
+}
+h3 { font-size: 1.7rem;}
+h4 { font-size: 1.2rem; margin:20px 0;}
+.sec-tit {
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+}
+.time-logo {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  /* background-image: url('../img/clock.png'); */
+  background-size: cover;
+}
+
+.w-line {
+  animation: fade-in 0.4s ease-out 0.9s both, 
+          going-down 0.4s ease-out 0.9s both;
+}
+#welcome > p:first-of-type {
+  padding: 5% 0;
+  line-height: 1.6rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+#p-tit {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bolder;
+}
+#name-input {
+  box-sizing: border-box;
+  margin: 20px 25% 10px 25%;
+  width: 50%;
+}
+#name-input > input {
+  width: 100%;
+  height: 40px;
+  border: 1px #ddd solid;
+  border-radius: 20px;
+  font-weight: lighter;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in 0.4s ease-out 1.4s both, 
+          going-down 0.4s ease-out 1.4s both;
+}
+.check-name {
+  display: inline-block;
+  margin: 10px 0;
+  width: 80%;
+  text-align: center;
+}
+
+.warning {
+  color: rgb(231, 20, 20, 0.8);
+  font-weight: bold;
+  width:100%;
+}
+.start-wrap {
+  margin: 0 auto;
+  width: 60%;
+}
+.start {
+  box-sizing: border-box;
+  padding:0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: rgba(0, 135, 245, 0.9);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  animation: fade-in 0.5s ease-out 1.9s both, 
+          going-down 0.5s ease-out 1.9s both,
+          start-flicker 2.5s infinite;
+  cursor: pointer;
+}  
+.start:hover, .start:focus {
+  animation-play-state: paused;
+}
+.start:active {
+  animation-play-state: running;
+}
+
+.w-line.gift {margin-top: 6px; font-size: .9rem; color:rgba(149,207,247,1);}

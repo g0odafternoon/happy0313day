@@ -1,0 +1,61 @@
+/* qna로 넘어갈 때 display: block; */
+#qna {
+  display: none;
+  opacity: 0;
+}
+.status-bar {
+  margin: 0 auto 20px;
+  width: 100%;
+  height: 15px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background: #fff;
+  animation: fade-in 0.3s ease-in-out;
+}
+.status {
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(95, 167, 235, 0.7);
+}
+.box {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  box-shadow: #ddd 0px 0px 10px 5px;
+  border-radius: 20px;
+  background: rgb(252, 252, 252);
+}
+.q {
+  width:100%;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  animation: fade-in 0.5s ease-in-out 0.3s forwards;
+  opacity: 0;
+  text-align: left;
+}
+.answer {
+  width: 100%;
+}
+.a {
+  width:100%;
+  margin: 0.5rem 0;
+  padding: 15px;
+  border: none;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  font-weight: bold;
+  text-align: left;
+  transition: background-color, color 0.2s linear;
+  opacity: 0;
+  cursor: pointer;
+}
+.a:hover, .a:focus {
+  background: #222;
+  color: #eee;
+}
+.a:last-child {
+  margin-bottom: 60px;
+}
