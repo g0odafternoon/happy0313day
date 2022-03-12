@@ -54,7 +54,7 @@ img {
 .projects {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+
       grid-template-columns: repeat(2, 1fr);
   height: 100vh;
   width: 100vw;
@@ -169,7 +169,7 @@ img {
 
 .projects .project .contWrap .cont .main-bot .swiper .swiper-wrapper .swiper-slide .text {
   position: absolute;
-  bottom: 26px;
+  bottom: 44px;
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -349,8 +349,8 @@ svg {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  top: 45%;
-  color: rgba(0, 0, 0, 0.4);
+  top: 40%;
+  color: black;
 }
 
 /*480px*/
@@ -391,7 +391,6 @@ svg {
   .projects {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     height: 100vh;
     width: 100vw;
@@ -480,7 +479,7 @@ svg {
   }
   .projects .project .contWrap .cont .main-bot .swiper .swiper-wrapper .swiper-slide .text {
     position: absolute;
-    bottom: 44px;
+    bottom: 47px;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
