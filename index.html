@@ -1,583 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAPPY JUNYOUNG DAY</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- favicon -->
+    <!-- web-font -->
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/qna.css">
+    <link rel="stylesheet" href="css/calc.css">
+    <link rel="stylesheet" href="css/result.css">
+    <!-- script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/customSwiper.js"></script>
+    <script defer src="js/data.js"></script>
+    <script defer src="js/mainScript.js"></script>
+    <script defer src="js/share.js"></script>
+    <title>HAPPY JOONYOUNG DAY</title>
 </head>
-<!-- favicon -->
-<!-- web-font -->
-<!-- css -->
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-<!-- script -->
-<script src="js/jquery-3.6.0.min.js"></script>
-<!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
-<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script> -->
+
 <body>
-    <div id="chocolate_rains">
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
+    <div class="navigation">
+        <button>Main</button>
+        <button>Quiz</button>
+        <button>About</button>
+        <button>@tititbtb</button>
+    </div>
+
+    <svg>
+        <filter id="turbulence" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence baseFrequency="0" numOctaves="2" seed="1" id="feturbulence" type="fractalNoise"  result="NOISE"></feTurbulence>
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="NOISE" scale="30"></feDisplacementMap>
+        </filter>
+    </svg>
+    <div class="projects-scroll">
+        <div class="projects">
+            <div class="project">
+                <div class="project__content">
+                    <h2>Main</h2>
+                    <div class="contWrap">
+                        <div class="cont">
+                          <div class="main-top" data-aos="fade-down" data-aos-duration="500">
+                            <h4>what?</h4>
+                            <p>준영이 생일인 13일을 기념하여<br/>
+                              총 13문제로 구성되었습니다.<br/>
+                              문제 난이도는 쉬운 편입니다.<br/><br/>
+                              봄비를 사랑하는 많은 분들이<br/> 풀어주셨으면 하는 마음으로 퀴즈를 내보았어요.<br/>
+                              한준영, 사랑해💕
+                            </p>
+                          </div>
+                          <div class="main-bot" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
+                            <h4>Gift for you</h4>
+                            <div class="swiper">
+                              <!-- Additional required wrapper -->
+                              <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                  <div class="img">
+                                    <img src="img/cup.jpg">
+                                  </div>
+                                  <div class="text">
+                                    <h5>준영현우 컵</h5>   
+                                    <p>구하루 제공</p>
+                                  </div>
+                                  <p class="detail-text">봄비, 그리고의 대사를<br/>발췌하여 준영현우컵 세트로 제작</p>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="img">
+                                    <img src="img/bookmark1.jpg">
+                                  </div>
+                                  <div class="text">
+                                    <h5>각인 책갈피</h5>
+                                    <p>보통의 나날 제공</p>
+                                  </div>
+                                  <p class="detail-text">고리형 책갈피와 북마크형<br/>2종 세트</p>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="img">
+                                    <img src="img/bookmark2.jpg">
+                                  </div>
+                                  <div class="text">
+                                    <h5>각인 책갈피</h5>
+                                    <p>보통의 나날 제공</p>
+                                  </div>
+                                  <p class="detail-text">1종-준영의 대사<br/> 1종-소설 제목, 캐릭터 이름</p>
+                                </div>
+                              </div>                            
+                              <!-- If we need navigation buttons -->
+                              <div class="swiper-button-prev"></div>
+                              <div class="swiper-button-next"></div>
+
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
+            <div class="project">
+                <div class="project__content">
+                    <h2>Quiz</h2>
+                    <div class="contWrap">
+                        <div class="cont">
+                            <section id="welcome" class="container">
+                                <div id="title-box">
+                                  <h1 class="title">
+                                    한준영 생일기념
+                                  </h1>
+                                  <h3>봄비, 그리고 Quiz</h3>
+                                  <h4>총 13문제, 객관식</h4>
+                                </div>
+                                <div id="p-tit" class="w-line">##이벤트 참여 방법##</div>
+                                <p class="w-line">
+                                  1.트위터 닉네임과 동일한 닉네임으로 참가<br/>
+                                  2.결과화면 캡쳐하기<br/>
+                                  3.결과화면 트위터 아이콘 클릭<br/>
+                                  4.캡쳐한 화면과 함께 내용 공유하기<br/>
+                                  5.이벤트 참여 완료!<br/>
+                                  <p class="w-line gift">
+                                    ##상품은 상단 Main 클릭!##
+                                  </p>
+                                </p>
+
+                                <div id="name-input">
+                                  <input type="text" placeholder="이름" autofocus>
+                                </div>
+                                <p class="check-name warning"></p>
+                                <div class="start-wrap">
+                                  <button class="start">START</button>
+                                </div>
+                              </section>
+                              <section id="qna">
+                                <div class="status-bar">
+                                  <div class="status"></div>
+                                </div>
+                                <div class="q box"></div>
+                                <div class="answer"></div>
+                              </section>
+                              <section id="calc">
+                                <div class="wait-wrap">
+                                  <p class="wait">이벤트 참여<br/> 감사합니다❤</p>
+                                  <p class="wait">결과를 계산중입니다!</p>
+                                  <p class="wait">잠시만 기다려주세요:D</p>
+                                </div>
+                              </section>
+                              <section id="result" class="container">
+                                <div id="score-box">
+                                  <div class="p title"></div>
+                                  <div class="point"></div>
+                                </div>
+
+                                <hr>
+                                <p class="share_q">봄비, 그리고 Quiz 결과 공유하기</p>
+                                <div class="hash">#봄비_그리고 #0313_해피준영데이 #축하한다고_두_번씩_말할_거야</div>
+                                <div id="share-box">
+                                  <a onclick=javascript:tw() target="_blank" alt="Share on Twitter" title="트위터에 공유하기">
+                                    <span class="tw"></span>
+                                  </a>
+                                </div>
+                                <button onclick=javascript:copy() class="btn">링크 복사하기</button>
+                                <hr>
+                                <div id="intro-box">
+                                  <div class="name">퀴즈출제. 구하루</div>
+                                  <div class="name">화면구현. 백주</div>
+                                </div>
+                              </section>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
+            <div class="project">
+                <div class="project__content">
+                    <h2>About</h2>
+                    <div class="contWrap">
+                        <div class="cont">
+                          <div class="cont-detail">
+                            <h4>Read</h4>
+                            <div class="detail-wrap">
+                              <div class="detail-cont">
+                                <a href="https://ridibooks.com/books/2433000001?_s=search&_q=%EB%B4%84%EB%B9%84%2C+%EA%B7%B8%EB%A6%AC%EA%B3%A0&_rdt_sid=search&_rdt_idx=0" target="_blank">
+                                <p>'봄비, 그리고'</p>  
+                                리디북스<br/> 
+                                바로가기
+                                </a>
+                              </div>
+                              <div class="detail-cont">
+                                <a href="https://tititbtb.postype.com/search?keyword=%EB%B4%84%EB%B9%84" target="_blank">
+                                  <p>'샤샤슈슈 님'</p>  
+                                  포스타입<br/> 
+                                  바로가기
+                                  </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cont-detail">
+                            <h4>Listen</h4>
+                            <div class="detail-wrap">
+                              <div class="detail-cont">
+                                <a href="http://www.yahe-shop.com/shop/shopdetail.html?branduid=3355170" target="_blank">
+                                  <p>'봄비, 그리고'</p>  
+                                  밤바다 야해<br/> 
+                                  바로가기
+                                  </a>
+                              </div>
+                              <div class="detail-cont">
+                                <a href="https://hae-ming.com/search/?q=%EB%B4%84%EB%B9%84%20%EA%B7%B8%EB%A6%AC%EA%B3%A0" target="_blank">
+                                  <p>'봄비, 그리고'</p>  
+                                  해밍<br/> 
+                                  바로가기
+                                  </a>
+                              </div>
+                              <div class="detail-cont">
+                                <a href="https://www.youtube.com/channel/UCA-TJe7sZK4bqah4yFC2Pjg" target="_blank">
+                                  <p>'봄비, 그리고 Side Story'</p> 
+                                  유튜브<br/> 
+                                  바로가기
+                                  </a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
+            <div class="project">
+                <div class="project__content">
+                    <h2>@tititbtb</h2>
+                    <div class="contWrap">
+                        <div class="cont">
+                          <a class="twitter-timeline" data-lang="ko" data-width="350" data-height="450" href="https://twitter.com/tititbtb?ref_src=twsrc%5Etfw">Tweets by tititbtb</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="heart">
-          <div class="ring"></div>
-          <div class="inner">
-            <div class="regular">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="reverse">
-              <div class="movable">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-          </div>
         </div>
     </div>
-    <h2 id="quote">
-        HAPPY BIRTHDAY<br/>
-        MY ADORABLE<br/>
-        JOONYOUNG
-    </h2>
-    <h3 class="btn-wrap">
-        <a href="https://g0odafternoon.github.io/happy0313day/main.html" class="button">
-          <span>C</span><span>L</span><span>I</span><span>C</span><span>K</span> 
-          <i>H</i><i>E</i><i>R</i><i>E</i>
-          
-        </a>
-      </h3>
-    <script>
-        var tl = gsap.timeline(), 
-
-        split = new SplitText("#quote", {type:"words,chars"}), 
-
-        words = split.words; //an array of all the divs that wrap each character
-
-        gsap.set("#quote", {perspective: 800});
-
-        tl.to(words, {
-        duration: 2,
-        "--weight": "300",
-        ease: "none",
-        color: "hsl(+=0, +=70%, +=20%)",
-        stagger: {
-            each: 0.4,
-        }
-        });
-
-
-        var button = document.querySelector(".button"),
-        firstWord = document.querySelectorAll(".button span"),
-        secondWord = document.querySelectorAll(".button i");
-
-        var tl = new TimelineMax({ paused:true });
-        tl.staggerTo(firstWord, 1, {color: "#fff", rotationX: 360, ease: Expo.easeOut}, 0.03, "#start");
-        tl.staggerTo(secondWord, 1, {color: "#fff", rotationX: 360, ease: Expo.easeOut}, 0.03, "#start");
-
-
-
-        button.addEventListener("mouseenter",function(){
-        tl.play();
-        });
-
-        button.addEventListener("mouseleave",function(){
-        tl.reverse();
-        });
-    </script>
 </body>
 </html>
