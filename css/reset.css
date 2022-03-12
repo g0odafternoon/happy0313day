@@ -80,7 +80,6 @@ a {
 }
 ::selection {
   background: #333; 
-  color: rgb(0, 205, 245);
 }
 button {
   border: none;
