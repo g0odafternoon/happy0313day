@@ -1,6 +1,6 @@
 const url = 'https://g0odafternoon.github.io/happy0313day/';
 const title = "'0313한준영 생일기념' 이벤트";
-const hash = '%23봄비_그리고 %230313_해피준영데이 %23축하한다고_두_번씩_말할_거야 %23저랑_같이_축하_하실래요? ';
+const hash = '%23봄비_그리고 %230313_해피준영데이 %23축하한다고_두_번씩_말할_거야 %23저랑_같이_축하_하실래요 ';
 
 const tw = () => {
   let score = document.querySelector('.point').innerHTML;
